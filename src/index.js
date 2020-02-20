@@ -1,6 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './common/styles/frame.scss'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from "./store";
+import "./common/styles/frame.scss";
+import "./mock";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const Apps = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+ReactDOM.render(Apps, document.getElementById("root"));

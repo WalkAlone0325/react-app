@@ -1,3 +1,13 @@
+git 分支操作
+
+1. 新建分支并切换
+   git checkout -b <branchName>
+2. git branch 查看分支
+3. git checkout master 切换到主分支
+4. git merge <branchName> 合并某个分支到主干 master
+5. git push origin 提交合并后的代码
+6. git branch -d <branchName > 合并后删除分支信息
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
